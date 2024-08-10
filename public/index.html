@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jobhire</title>
+  <link rel="stylesheet" href="/public/output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="p-6">
+    <div class="flex">
+      <!-- Logo -->
+      <a href="index.html"><img src="img/logo.svg" alt=""></a>
+      <!-- Toggle Button for Mobile -->
+      <div class="md:hidden max-md:ml-auto">
+        <button id="nav-toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+      <!-- Navbar Links -->
+      <div class="hidden md:ml-auto md:flex md:space-x-5 space-x-4">
+        <a href="findjobs.html" class="md:my-auto hover:text-green-500">Find Jobs</a>
+        <a href="employers.html" class="md:my-auto hover:text-green-500">Employers</a>
+        <a href="pricing.html" class="md:my-auto hover:text-green-500">Pricing</a>
+        <a href="blog.html" class="md:my-auto hover:text-green-500">Blog</a>
+        <a href="contact.html" class="md:my-auto hover:text-green-500">Contact</a>
+        <a href="contact.html" class="">
+          <button type="button" class="apply-button md:my-auto">Login</button>
+        </a>
+        <a href="#" class="">
+          <button type="button"
+            class="border-transparent hover:border-black rounded-[20px] px-4 py-2 font-semibold mt-2 lg:mt-0 bg-btnBgYellowish hover:border md:my-auto">Post
+            a Job</button>
+        </a>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="nav-menu" class="hidden md:hidden">
+      <a href="findjobs.html" class="block py-3 hover:text-green-500">Find Jobs</a>
+      <a href="employers.html" class="block py-3 hover:text-green-500">Employer</a>
+      <a href="pricing.html" class="block py-3 hover:text-green-500">Pricing</a>
+      <a href="blog.html" class="block py-3 hover:text-green-500">Blog</a>
+      <a href="contact.html" class="block py-3 hover:text-green-500">Contact</a>
+      <a href="contact.html" class="">
+        <button type="button" class="apply-button block my-3">Login</button>
+      </a>
+      <a href="#" class="">
+        <button type="button"
+          class="border-transparent hover:border-black rounded-[20px] px-4 py-2 font-semibold mt-2 lg:mt-0 bg-btnBgYellowish hover:border md:my-auto my-3">Post
+          a Job</button>
+      </a>
+    </div>
+  </nav>
+
+
+
+  <!-- Banner -->
+  <main class="md:grid md:grid-cols-2">
+    <div class="banner font-medium px-5 mt-[100px] max-md:mt-0">
+      <h1 class="w-full md:text-4xl text-2xl font-semibold text-center mb-14 mt-3">
+        When Searching for a job don’t go in blind, Research first.
+      </h1>
+
+      <div class="md:flex max-w-full max-md:space-y-4">
+        <input
+          class="w-full pl-3 py-5 md:text-lg bg-green-50 border border-black md:rounded-l-[28px] rounded-[28px] md:border-r-0 max-md:block"
+          type="text" placeholder="Job Keyword" />
+        <input
+          class="w-full pl-3 py-5 md:ml-[-40px] md:text-lg  bg-green-50 border border-black rounded-[28px] md:rounded-none   max-md:block "
+          type="text" placeholder="Location" />
+        <button
+          class="max-md:w-full py-5 px-7 md:text-lg md:ml-[-25px] bg-btnBgYellowish hover:bg-white font-bold border border-black rounded-[28px] md:rounded-l-none max-md:block"
+          type="search">
+          Search
+        </button>
+      </div>
+
+      <label for="Popular Searchs" class="block text-btntextGreenish my-3">Popular Searchs:</label>
+      <button type="button" class="banner-button">Designer</button>
+      <button type="button" class="banner-button">Developer</button>
+      <button type="button" class="banner-button">iOS</button>
+    </div>
+    <div class="flex justify-center max-md:mt-9 md:mb-9">
+      <img src="img/heroman.webp" class="max-h-[480px] w-auto md:mt-16 bg-green-50 rounded-[20%]" alt="Heroman picture"
+        srcset="" />
+    </div>
+  </main>
+
+  <!-- Types of Jobs -->
+  <section class="text-center bg-jobTypesBg p-8">
+    <h2 class="text-2xl font-bold max-w-96  mx-auto">Thousands of dreams jobs available now</h2>
+    <p class="text-xl text-slate-400">Browse some featured jobs</p>
+    <article class="grid md:grid-cols-2 lg:grid-cols-4 gap-9 mt-10">
+
+      <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
+        <img src="img/desginer.png" class="h-16 mx-auto" alt="" srcset="">
+        <h3 class="text-slate-600 font-medium text-lg pt-2">Designs & Art</h3>
+        <p class="text-slate-400">653 open positions</p>
+      </div>
+      <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
+        <img src="img/education.png" class="h-16 mx-auto" alt="" srcset="">
+        <h3 class="text-slate-600 font-medium text-lg pt-2">Education</h3>
+        <p class="text-slate-400">109 open positions</p>
+      </div>
+      <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
+        <img src="img/app-development.png" class="h-16 mx-auto" alt="" srcset="">
+        <h3 class="text-slate-600 font-medium text-lg pt-2">Web development</h3>
+        <p class="text-slate-400">870 open positions</p>
+      </div>
+      <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
+        <img src="img/content.png" class="h-16 mx-auto" alt="" srcset="">
+        <h3 class="text-slate-600 font-medium text-lg pt-2">Digital Marketing</h3>
+        <p class="text-slate-400">360 open positions</p>
+      </div>
+    </article>
+    <button type="button" class="button-styling">Browse more Categories</button>
+  </section>
+
+  <!-- Recent Available Jobs -->
+  <section class="p-8">
+    <h2 class="text-2xl font-semibold">Recent Available Jobs</h2>
+
+    <button type="button" class="my-3 font-normal">Contract</button>
+    <button type="button" class="my-3 font-normal ms-3">Remote</button>
+    <button type="button" class="my-3 font-bold ms-3">Popular</button>
+
+    <article class="grid md:grid-cols-2 lg:grid-cols-1  gap-9 mt-10 text-center">
+
+      <div class="recent-jobs-container">
+        <img src="img/1.webp" class="recent-jobs-img" alt="" srcset="">
+        <h3 class="recent-jobs-h3 lg:after:content-['The\00a0Simpsons']">Web Developer</h3>
+        <h4 class="recent-jobs-h4">The Simpsons</h4>
+        <ul class="recent-jobs-ul">
+          <li class="m-2 lg:mr-16">Contract</li>
+          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>San Francisco</li>
+        </ul>
+        <p class="recent-jobs-p">$1500-$3600</p>
+        <button type="button" class="apply-button">Apply</button>
+      </div>
+      <div class="recent-jobs-container">
+        <img src="img/2.webp" class="recent-jobs-img" alt="" srcset="">
+        <h3 class="recent-jobs-h3 lg:after:content-['Acme-Corporation']">Graphic Designer</h3>
+        <h4 class="recent-jobs-h4">Acme Corporation</h4>
+        <ul class="recent-jobs-ul">
+          <li class="m-2 lg:mr-16">Remote
+          </li>
+          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Herzegovina</li>
+        </ul>
+        <p class="recent-jobs-p">$800-$2000</p>
+        <button type="button" class="apply-button">Apply</button>
+      </div>
+      <div class="recent-jobs-container">
+        <img src="img/3.webp" class="recent-jobs-img " alt="" srcset="">
+        <h3 class="recent-jobs-h3 lg:after:content-['Umbrella-Corporation']">UI/UX Designer</h3>
+        <h4 class="recent-jobs-h4">Soylent Corp</h4>
+        <ul class="recent-jobs-ul">
+          <li class="m-2 lg:mr-16">Contract
+          </li>
+          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Luxembourg</li>
+        </ul>
+        <p class="recent-jobs-p">$1250-$3000</p>
+        <button type="button" class="apply-button">Apply</button>
+      </div>
+      <div class="recent-jobs-container">
+        <img src="img/4.webp" class="recent-jobs-img" alt="" srcset="">
+        <h3 class="recent-jobs-h3 lg:after:content-['Massive-Dynamic']">Content Writer</h3>
+        <h4 class="recent-jobs-h4">Umbrella Corporation</h4>
+        <ul class="recent-jobs-ul">
+          <li class="m-2 lg:mr-16">Remote
+
+          </li>
+          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>New York, NY
+          </li>
+        </ul>
+        <p class="recent-jobs-p">$3500-$4600</p>
+        <button type="button" class="apply-button">Apply</button>
+      </div>
+      <div class="recent-jobs-container">
+        <img src="img/6.webp" class="recent-jobs-img" alt="" srcset="">
+        <h3 class="recent-jobs-h3 lg:after:content-['Capital-Partners']">SEO Specialist</h3>
+        <h4 class="recent-jobs-h4">Capital Partners</h4>
+        <ul class="recent-jobs-ul">
+          <li class="m-2 lg:mr-16">Remote
+
+          </li>
+          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Bay Area
+          </li>
+        </ul>
+        <p class="recent-jobs-p">$3500-$4500</p>
+        <button type="button" class="apply-button">Apply</button>
+      </div>
+      <div class="recent-jobs-container">
+        <img src="img/5.webp" class="recent-jobs-img" alt="" srcset="">
+        <h3 class="recent-jobs-h3 lg:after:content-['Massive-Dynamic']">Product Designer</h3>
+        <h4 class="recent-jobs-h4">Massive Dynamic</h4>
+        <ul class="recent-jobs-ul">
+          <li class="m-2 lg:mr-16">Remote
+
+          </li>
+          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Silicon Valley
+          </li>
+        </ul>
+        <p class="recent-jobs-p">$2000-$3600</p>
+        <button type="button" class="apply-button">Apply</button>
+      </div>
+      <button type="button" class="button-styling mx-auto">Browse more Jobs</button>
+    </article>
+
+
+  </section>
+
+  <!-- Grow your Career -->
+  <section class="grid md:grid-cols-2 gap-7 grid-cols-1 p-6">
+    <div class="mx-auto">
+      <img src="img/artgirl..svg" alt="">
+    </div>
+    <div class="lg:mr-5">
+      <h3 class="text-3xl font-semibold my-5">Grow your career</h3>
+      <p class="max-w-96 text-slate-500">When an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged</p>
+      <div class="grid md:grid-cols-2 gap-6 mt-10 md:text-center">
+        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">100% Verified Jobs
+          <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
+            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432"
+                fill="#6EE7B7"></path>
+              <path
+                d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24"
+                fill="#000000"></path>
+            </g>
+          </svg>
+
+        </h4>
+        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">One profile Unlimited job Opening
+          <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
+            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432"
+                fill="#6EE7B7"></path>
+              <path
+                d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24"
+                fill="#000000"></path>
+            </g>
+          </svg>
+
+        </h4>
+        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">Get Personalized Job Recommendations
+          <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
+            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432"
+                fill="#6EE7B7"></path>
+              <path
+                d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24"
+                fill="#000000"></path>
+            </g>
+          </svg>
+
+        </h4>
+        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">Find Your Perfect Job Match
+          <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
+            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432"
+                fill="#6EE7B7"></path>
+              <path
+                d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24"
+                fill="#000000"></path>
+            </g>
+          </svg>
+
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-6 text-black font-semibold text-center lg:mt-20">
+    <ul class="md:flex justify-evenly align-middle border border-black rounded-2xl">
+      <li><img src="img/user.svg" class="mx-auto h-20 w-20 my-5" alt="">
+        <h4 class="text-3xl">35000+</h4>
+        <p class="mb-4 text-lg">daily active users</p>
+      </li>
+      <li><img src="img/thumb.svg" class="mx-auto h-20 w-20 my-5" alt="">
+        <h4 class="text-3xl">69000+</h4>
+        <p class="mb-4 text-lg">open job positions</p>
+      </li>
+      <li><img src="img/reading.svg" class="mx-auto h-20 w-20 my-5" alt="">
+        <h4 class="text-3xl">68500+</h4>
+        <p class="mb-4 text-lg">stories shared</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Client Reviews -->
+
+  <section class="grid md:grid-cols-2 gap-7 grid-cols-1 p-6">
+    <div class="lg:mr-5 lg:mt-20">
+      <h3 class="text-3xl font-semibold my-5">Client Reviews</h3>
+      <p class="max-w-[440px] text-slate-500">
+        I was impressed by the quality of this job board website template. We
+        were able to lauch a full stack web application with this front-end
+        template within days. I only had to manage backend. Highly
+        recommended. You can purchase it without any question.
+      </p>
+      <hr class="my-4 max-w-[440px]" />
+      <div class="flex">
+        <img src="img/avatar.webp" class="mr-4" alt="" srcset="" />
+        <div class="flex flex-col">
+          <h4 class="text-lg">Daniyel Martin</h4>
+          <p class="font-semibold text-btntextGreenish">Developer</p>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto">
+      <img src="img/clients.webp" alt="" />
+    </div>
+  </section>
+
+  <!-- Latest News -->
+  <section class="p-6 text-center">
+    <h3 class="text-3xl font-semibold my-5">Latest News</h3>
+    <div class="grid md:grid-cols-3 gap-x-5 text-left">
+      <div class="mt-10">
+        <img src="img/news1.webp" class="w-full rounded-[20px]" alt="" srcset="">
+        <h4 class="font-semibold text-green-500 mt-3">23 SEPTEMBER, 2022</h4>
+        <p class="font-medium text-lg mt-3">Top American Companies that Promote Gender Diversity in the Workplace</p>
+      </div>
+      <div class="mt-10">
+        <img src="img/news2.webp" class="w-full rounded-[20px]" alt="" srcset="">
+        <h4 class="font-semibold text-green-500 mt-3">17 AUGUST, 2022</h4>
+        <p class="font-medium text-lg mt-3">How to Identify Diversity & Inclusivity at Workplace?</p>
+      </div>
+      <div class="mt-10">
+        <img src="img/news3.webp" class="w-full rounded-[20px]" alt="" srcset="">
+        <h4 class="font-semibold text-green-500 mt-3">19 JULY, 2022</h4>
+        <p class="font-medium text-lg mt-3">The Rise of Remote Jobs & How to Write a Resume to Get a Perfect Remote Job?
+        </p>
+      </div>
+    </div>
+    <button type="button" class="button-styling mx-auto">View on Blog</button>
+  </section>
+
+  <!-- Download the App -->
+  <section class="grid max-md:place-items-center  md:grid-cols-2 bg-jobTypesBg gap-7 grid-cols-1 p-6">
+    <div class="md:mr-5 md:mt-20">
+      <h3 class="text-3xl font-semibold my-5">Download the App</h3>
+      <p class="max-w-[440px] text-slate-500">
+        Search for your favourite remote jobs on the go. Download our app on the iOS App Store or Android Play Store.
+      </p>
+
+      <ul class="mt-4 flex max-md:flex-col max-md:max-w-48 space-x-3 mx-auto max-md:space-y-3">
+        <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
+          <i class="fa-brands fa-apple text-4xl my-auto"></i>
+          <div class="ml-3">
+            <p class="text-xs font-medium">Download on the</p>
+            <h4 class="text-xl font-medium">App Store</h4>
+          </div>
+        </li>
+        <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
+          <i class="fa-brands fa-google-play text-3xl my-auto"></i>
+          <div class="ml-3">
+            <p class="text-xs font-medium">Get it on</p>
+            <h4 class="text-xl font-medium">Google Play</h4>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="mx-auto">
+      <img src="img/device.webp" alt="" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class=" bg-slate-900 p-6">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+
+      <div>
+        <img src="img/logo-dark.svg" class="mt-10" alt="" srcset="" />
+        <ul class="mt-12 space-y-2">
+          <li>
+            <label for="Email" class="text-slate-400">Email:</label>
+            <a href="support@jobhire.com" class="text-green-500">support@jobhire.com</a>
+          </li>
+          <li>
+            <label for="Email" class="text-slate-400">Call:</label>
+            <a href="support@jobhire.com" class="text-white">+1 (852) 1234 567</a>
+          </li>
+        </ul>
+        <ul class="flex mt-5">
+          <li>
+            <i class="fa-brands fa-facebook-f text-slate-300 border rounded-[50%] text-sm p-2 mr-4 w-8 text-center"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter text-slate-300 border rounded-[50%] text-sm p-2 mr-4"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram text-slate-300 border rounded-[50%] text-sm p-2 mr-4"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="my-10 text-white font-semibold text-xl">For Candidates</h4>
+        <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+          <li><a href="#" class="footer-links">Browse all Jobs</a></li>
+          <li><a href="#" class="footer-links">Candidate Dashboard</a></li>
+          <li><a href="#" class="footer-links">Latest News</a></li>
+          <li><a href="#" class="footer-links">Job Alerts</a></li>
+          <li><a href="#" class="footer-links">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="my-10 text-white font-semibold text-xl">For Employers</h4>
+        <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+          <li><a href="#" class="footer-links">Browse Candidates</a></li>
+          <li><a href="#" class="footer-links">Employer Dashboard</a></li>
+          <li><a href="#" class="footer-links">Submit a Job</a></li>
+          <li><a href="#" class="footer-links">Pricing & Plans</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mt-10 mb-7 text-white font-semibold text-xl">Newsletter</h4>
+        <p class="text-slate-400 max-w-[410px] my-5">
+          Subscribe to our newsletter and never miss latest job alert and news
+        </p>
+        <div class="flex max-w-[430px]">
+          <input class="w-full pl-3 py-3 bg-slate-900 border border-slate-300 rounded-l-[28px] border-r-0" type="text"
+            placeholder="Email Address" />
+          <button
+            class="py-3 px-7 ml-[-25px] bg-btnBgYellowish hover:bg-white font-bold border border-slate-300 rounded-[28px]"
+            type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+    <hr class="my-14 opacity-50">
+    <div class="md:flex my-7">
+      <p class="text-center text-sm text-slate-400">2024 Jobhire. All Right Reserved. Made by Web3Templates</p>
+      <p class="md:ml-auto max-md:mt-4  text-center text-sm text-slate-400">Privacy · Terms</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>

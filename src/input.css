@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .banner-input{
+    @apply max-md:w-full w-auto text-base border border-black rounded-[28px]  p-3 my-4;
+} */
+/* .display{
+    @apply  block md:inline-block ;
+} */
+
+.banner-search-btn {
+  @apply bg-btnBgYellowish max-md:w-full w-auto text-base border border-black rounded-[28px] p-3;
+}
+.banner-button {
+  @apply text-[13px] text-btntextGreenish bg-btnBgGreenish border-black rounded-[28px] mx-1 px-2 py-1;
+}
+
+.button-styling {
+  @apply bg-btnBgYellowish rounded-[28px] hover:border border-black font-medium p-4 mt-8 mb-8;
+}
+
+/* Recent Available Jobs  */
+.recent-jobs-container {
+  @apply lg:flex lg:items-center lg:justify-evenly bg-white py-5 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl;
+}
+.recent-jobs-img {
+  @apply h-8 mx-auto lg:mx-3 w-8;
+}
+.recent-jobs-h3 {
+  @apply font-medium text-lg pt-2 lg:pt-0  after:text-green-500 after:block after:text-left;
+}
+.recent-jobs-h4 {
+  @apply text-green-500 font-semibold lg:hidden;
+}
+.recent-jobs-ul {
+  @apply flex justify-center text-slate-400 font-medium;
+}
+.recent-jobs-p {
+  @apply text-slate-400 font-semibold text-[17px];
+}
+.apply-button {
+  @apply border border-black rounded-[20px] px-4 py-2 font-semibold mt-2 lg:mt-0 hover:bg-btnBgYellowish hover:border-transparent;
+}
+/* footer */
+.footer-links {
+  @apply hover:text-green-700 transition ease-in-out delay-100 duration-300 transform;
+}

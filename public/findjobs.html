@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobhire</title>
+    <link rel="stylesheet" href="/public/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="p-6">
+        <div class="flex">
+            <!-- Logo -->
+            <a href="index.html"><img src="img/logo.svg" alt="" /></a>
+            <!-- Toggle Button for Mobile -->
+            <div class="md:hidden max-md:ml-auto">
+                <button id="nav-toggle">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+            <!-- Navbar Links -->
+            <div class="hidden md:ml-auto md:flex md:space-x-5 space-x-4">
+                <a href="findjobs.html" class="md:my-auto hover:text-green-500">Find Jobs</a>
+                <a href="employers.html" class="md:my-auto hover:text-green-500">Employers</a>
+                <a href="pricing.html" class="md:my-auto hover:text-green-500">Pricing</a>
+                <a href="blog.html" class="md:my-auto hover:text-green-500">Blog</a>
+                <a href="contact.html" class="md:my-auto hover:text-green-500">Contact</a>
+                <a href="contact.html" class="">
+                    <button type="button" class="apply-button md:my-auto">Login</button>
+                </a>
+                <a href="#" class="">
+                    <button type="button"
+                        class="border-transparent hover:border-black rounded-[20px] px-4 py-2 font-semibold mt-2 lg:mt-0 bg-btnBgYellowish hover:border md:my-auto">
+                        Post a Job
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="nav-menu" class="hidden md:hidden">
+            <a href="findjobs.html" class="block py-3 hover:text-green-500">Find Jobs</a>
+            <a href="employers.html" class="block py-3 hover:text-green-500">Employers</a>
+            <a href="pricing.html" class="block py-3 hover:text-green-500">Pricing</a>
+            <a href="blog.html" class="block py-3 hover:text-green-500">Blog</a>
+            <a href="contact.html" class="">
+                <button type="button" class="apply-button block my-3">Login</button>
+            </a>
+            <a href="contact.html" class="block py-3 hover:text-green-500">Contact</a>
+            <a href="#" class="">
+                <button type="button"
+                    class="border-transparent hover:border-black rounded-[20px] px-4 py-2 font-semibold mt-2 lg:mt-0 bg-btnBgYellowish hover:border md:my-auto my-3">
+                    Post a Job
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- findjobs section-1 -->
+
+    <section class="px-10 py-10 bg-jobTypesBg">
+        <h2 class="md:text-4xl text-2xl font-bold my-5 text-center">Find Your Dream Job</h2>
+        <div class="md:flex max-w-full max-md:space-y-4 px-20">
+            <input
+                class="w-full pl-4 md:py-3 py-2 md:text-lg bg-green-50 border border-black md:rounded-l-[28px] rounded-[28px] md:border-r-0 max-md:block"
+                type="text" placeholder="Job Keyword" />
+            <input
+                class="w-full pl-2 md:py-3 py-2 md:ml-[-40px] md:text-lg  bg-green-50 border border-black rounded-[28px] md:rounded-none   max-md:block "
+                type="text" placeholder="Location" />
+            <input
+                class="w-full pl-2 md:py-3 py-2 md:ml-[-40px] md:text-lg  bg-green-50 border border-black rounded-[28px] md:rounded-none   max-md:block "
+                type="text" placeholder="Job Type" />
+            <input
+                class="w-full pl-2 md:py-3 py-2 md:ml-[-40px] md:text-lg  bg-green-50 border border-black rounded-[28px] md:rounded-none   max-md:block "
+                type="text" placeholder="Experience" />
+            <button
+                class="max-md:w-full md:py-3 py-2 px-7 md:text-lg md:ml-[-25px] bg-btnBgYellowish hover:bg-white font-bold border border-black rounded-[28px] md:rounded-l-none max-md:block"
+                type="search">
+                Search
+            </button>
+        </div>
+    </section>
+
+
+    <!-- findjobs section-2 Filter -->
+    <!-- following div to make a side filter on lg -->
+    <div class="grid md:grid-cols-[1fr,2fr]">
+
+        <section class="p-6">
+            <div class="flex items-center  p-3 border rounded-lg  border-slate-300">
+                <i class="fa-solid fa-filter text-slate-700"></i>
+                <h4 class="text-slate-600 ml-2">Filters</h4>
+                <i class="fa-solid fa-angle-down ml-auto text-slate-700 cursor-pointer" id="job-filter"></i>
+            </div>
+            <div id="job-specifications">
+                <div>
+                    <h3 class="recent-jobs-h3 my-5">Employment Type</h3>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><input type="checkbox" class="mr-2" name="full time" id="">Full Time (362)</li>
+                        <li><input type="checkbox" class="mr-2" name="part time" id="">Part Time (154)</li>
+                        <li><input type="checkbox" class="mr-2" name="freelance" id="">Freelance (78)</li>
+                        <li><input type="checkbox" class="mr-2" name="contract" id="">Contract (15)</li>
+                        <li><input type="checkbox" class="mr-2" name="internship" id="">Internship (39)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="recent-jobs-h3 my-4">Salary</h3>
+                    <input type="range" class="" name="" id="">
+                </div>
+                <div>
+                    <h3 class="recent-jobs-h3 my-5">Experience Level</h3>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><input type="checkbox" class="mr-2" name="full time" id="">Trainee (362)</li>
+                        <li><input type="checkbox" class="mr-2" name="part time" id="">Junior (154)</li>
+                        <li><input type="checkbox" class="mr-2" name="freelance" id="">Middle (78)</li>
+                        <li><input type="checkbox" class="mr-2" name="contract" id="">Senior (15)</li>
+                        <li><input type="checkbox" class="mr-2" name="internship" id="">Director (39)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- findjobs section-3 Results -->
+
+        <section class="p-6">
+            <!-- Result-Sorting -->
+
+            <div class="flex items-center  p-3 border rounded-lg  border-slate-300">
+                <h4 class="text-slate-700">Showing 35 results</h4>
+                <label class="text-slate-600 ml-auto mr-2">Sort by :</label>
+                <select name="" id="">
+                    <option class="" value="Newest Posts">Newest Posts</option>
+                    <option class="" value="Oldest Posts">Oldest Posts</option>
+                    <option class="" value="Popular Posts">Popular Posts</option>
+                </select>
+            </div>
+
+            <!-- Results -->
+            <article class="grid mt-10">
+                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                    <div class="flex items-center">
+                        <img src="img/4.webp" class="h-10 mr-7" alt="" srcset="">
+                        <div>
+                            <h3 class="recent-jobs-h3">Investor Quality Technician</h3>
+                            <h4 class="recent-jobs-p">Norwalk</h4>
+                        </div>
+                        <div class="ml-auto mx-3 max-[450px]:hidden">
+                            <p class="font-semibold text-[17px]">$2k - $9k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="text-lg text-slate-500">
+                        <p>
+                            Commodi vitae omnis ratione consequuntur facilis deleniti rerum deleniti nihil non odit
+                            ducimus
+                            aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
+                        </p>
+                    </div>
+                    <div class="md:flex items-center max-sm:space-y-8">
+                        <div>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Full-time</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] mx-2 px-2 py-1 float-left">Architect</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Costa
+                                Rica</button>
+                        </div>
+                        <div class="ml-auto hidden max-[450px]:block  mx-3 float-left">
+                            <p class="recent-jobs-p">$2k - $9k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                        <button type="button"
+                            class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish ml-auto float-right">Apply</button>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="grid mt-10">
+                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                    <div class="flex items-center">
+                        <img src="img/3.webp" class="h-10 mr-7" alt="" srcset="">
+                        <div>
+                            <h3 class="recent-jobs-h3">Senior Configuration Designer</h3>
+                            <h4 class="recent-jobs-p">Colorado Springs</h4>
+                        </div>
+                        <div class="ml-auto mx-3 max-[450px]:hidden">
+                            <p class="font-semibold text-[17px]">$1k - $5k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="text-lg text-slate-500">
+                        <p>
+                            Ut officiis atque beatae quaerat molestiae perferendis reiciendis dolorum cum est adipisci
+                            quia
+                            voluptas ad saepe modi accusamus saepe qui nulla sequi cupiditate quia architecto.
+                        </p>
+                    </div>
+                    <div class="md:flex items-center max-sm:space-y-8">
+                        <div>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Contract</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] mx-2 px-2 py-1 float-left">Orchestrator</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Russian
+                                Federation</button>
+                        </div>
+                        <div class="ml-auto hidden max-[450px]:block  mx-3 float-left">
+                            <p class="recent-jobs-p">$1k - $5k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                        <button type="button"
+                            class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish ml-auto float-right">Apply</button>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="grid mt-10">
+                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                    <div class="flex items-center">
+                        <img src="img/6.webp" class="h-10 mr-7" alt="" srcset="">
+                        <div>
+                            <h3 class="recent-jobs-h3">Dynamic Identity Technician</h3>
+                            <h4 class="recent-jobs-p">Lake Havasu City</h4>
+                        </div>
+                        <div class="ml-auto mx-3 max-[450px]:hidden">
+                            <p class="font-semibold text-[17px]">$4k - $6k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="text-lg text-slate-500">
+                        <p>
+                            Molestiae iure odit inventore error repellendus fuga ut exercitationem nostrum cumque porro
+                            consectetur quo totam alias dolorum eos distinctio assumenda exercitationem quod quaerat
+                            numquam
+                            officiis.
+                        </p>
+                    </div>
+                    <div class="md:flex items-center max-sm:space-y-8">
+                        <div>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Full-time</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] mx-2 px-2 py-1 float-left">Executive</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Chad</button>
+                        </div>
+                        <div class="ml-auto hidden max-[450px]:block  mx-3 float-left">
+                            <p class="recent-jobs-p">$4k - $6k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                        <button type="button"
+                            class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish ml-auto float-right">Apply</button>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="grid mt-10">
+                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                    <div class="flex items-center">
+                        <img src="img/2.webp" class="h-10 mr-7" alt="" srcset="">
+                        <div>
+                            <h3 class="recent-jobs-h3">International Marketing Coordinator</h3>
+                            <h4 class="recent-jobs-p">La Habra</h4>
+                        </div>
+                        <div class="ml-auto mx-3 max-[450px]:hidden">
+                            <p class="font-semibold text-[17px]">$4k - $5k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="text-lg text-slate-500">
+                        <p>
+                            Commodi vitae omnis ratione consequuntur facilis deleniti rerum deleniti nihil non odit
+                            ducimus
+                            aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
+                        </p>
+                    </div>
+                    <div class="md:flex items-center max-sm:space-y-8">
+                        <div>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Contract</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] mx-2 px-2 py-1 float-left">Technician</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Libyan
+                                Arab Jamahiriya</button>
+                        </div>
+                        <div class="ml-auto hidden max-[450px]:block  mx-3 float-left">
+                            <p class="recent-jobs-p">$4k - $5k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                        <button type="button"
+                            class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish ml-auto float-right">Apply</button>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="grid mt-10">
+                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                    <div class="flex items-center">
+                        <img src="img/4.webp" class="h-10 mr-7" alt="" srcset="">
+                        <div>
+                            <h3 class="recent-jobs-h3">Central Group Representative</h3>
+                            <h4 class="recent-jobs-p">Lake Havasu City</h4>
+                        </div>
+                        <div class="ml-auto mx-3 max-[450px]:hidden">
+                            <p class="font-semibold text-[17px]">$6k - $10k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="text-lg text-slate-500">
+                        <p>
+                            Similique velit tenetur asperiores voluptate accusantium quidem incidunt illo incidunt
+                            corporis
+                            nobis nulla magnam enim autem dignissimos perspiciatis rem voluptatibus incidunt vero
+                            deserunt
+                            repudiandae saepe.
+                        </p>
+                    </div>
+                    <div class="md:flex items-center max-sm:space-y-8">
+                        <div>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Contract</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] mx-2 px-2 py-1 float-left">Director</button>
+                            <button type="button"
+                                class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Trinidad
+                                and Tobago</button>
+                        </div>
+                        <div class="ml-auto hidden max-[450px]:block  mx-3 float-left">
+                            <p class="recent-jobs-p">$6k - $10k</p>
+                            <p class="recent-jobs-p">Posted 1 year ago</p>
+                        </div>
+                        <button type="button"
+                            class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish ml-auto float-right">Apply</button>
+                    </div>
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </div>
+
+
+    <!-- Download the App -->
+    <section class="grid max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7 grid-cols-1 p-6">
+        <div class="md:mr-5 md:mt-20">
+            <h3 class="text-3xl font-semibold my-5">Download the App</h3>
+            <p class="max-w-[440px] text-slate-500">
+                Search for your favourite remote jobs on the go. Download our app on
+                the iOS App Store or Android Play Store.
+            </p>
+
+            <ul class="mt-4 flex max-md:flex-col max-md:max-w-48 space-x-3 mx-auto max-md:space-y-3">
+                <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
+                    <i class="fa-brands fa-apple text-4xl my-auto"></i>
+                    <div class="ml-3">
+                        <p class="text-xs font-medium">Download on the</p>
+                        <h4 class="text-xl font-medium">App Store</h4>
+                    </div>
+                </li>
+                <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
+                    <i class="fa-brands fa-google-play text-3xl my-auto"></i>
+                    <div class="ml-3">
+                        <p class="text-xs font-medium">Get it on</p>
+                        <h4 class="text-xl font-medium">Google Play</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto">
+            <img src="img/device.webp" alt="" />
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 p-6">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+            <div>
+                <img src="img/logo-dark.svg" class="mt-10" alt="" srcset="" />
+                <ul class="mt-12 space-y-2">
+                    <li>
+                        <label for="Email" class="text-slate-400">Email:</label>
+                        <a href="support@jobhire.com" class="text-green-500">support@jobhire.com</a>
+                    </li>
+                    <li>
+                        <label for="Email" class="text-slate-400">Call:</label>
+                        <a href="support@jobhire.com" class="text-white">+1 (852) 1234 567</a>
+                    </li>
+                </ul>
+                <ul class="flex mt-5">
+                    <li>
+                        <i
+                            class="fa-brands fa-facebook-f text-slate-300 border rounded-[50%] text-sm p-2 mr-4 w-8 text-center"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter text-slate-300 border rounded-[50%] text-sm p-2 mr-4"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram text-slate-300 border rounded-[50%] text-sm p-2 mr-4"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="my-10 text-white font-semibold text-xl">For Candidates</h4>
+                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                    <li><a href="#" class="footer-links">Browse all Jobs</a></li>
+                    <li><a href="#" class="footer-links">Candidate Dashboard</a></li>
+                    <li><a href="#" class="footer-links">Latest News</a></li>
+                    <li><a href="#" class="footer-links">Job Alerts</a></li>
+                    <li><a href="#" class="footer-links">My Bookmarks</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="my-10 text-white font-semibold text-xl">For Employers</h4>
+                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                    <li><a href="#" class="footer-links">Browse Candidates</a></li>
+                    <li><a href="#" class="footer-links">Employer Dashboard</a></li>
+                    <li><a href="#" class="footer-links">Submit a Job</a></li>
+                    <li><a href="#" class="footer-links">Pricing & Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="mt-10 mb-7 text-white font-semibold text-xl">
+                    Newsletter
+                </h4>
+                <p class="text-slate-400 max-w-[410px] my-5">
+                    Subscribe to our newsletter and never miss latest job alert and news
+                </p>
+                <div class="flex max-w-[430px]">
+                    <input class="w-full pl-3 py-3 bg-slate-900 border border-slate-300 rounded-l-[28px] border-r-0"
+                        type="text" placeholder="Email Address" />
+                    <button
+                        class="py-3 px-7 ml-[-25px] bg-btnBgYellowish hover:bg-white font-bold border border-slate-300 rounded-[28px]"
+                        type="submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="my-14 opacity-50" />
+        <div class="md:flex my-7">
+            <p class="text-center text-sm text-slate-400">
+                2024 Jobhire. All Right Reserved. Made by Web3Templates
+            </p>
+            <p class="md:ml-auto max-md:mt-4 text-center text-sm text-slate-400">
+                Privacy · Terms
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById("nav-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+        });
+
+        const jobFilter = document.getElementById("job-filter");
+        const jobSpecifications = document.getElementById("job-specifications");
+
+        jobFilter.addEventListener("click", () => {
+            jobSpecifications.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
