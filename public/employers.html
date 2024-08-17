@@ -25,7 +25,7 @@
                 </button>
             </div>
             <!-- Navbar Links -->
-            <div class="hidden md:ml-auto md:flex md:space-x-5 space-x-4">
+            <div class="hidden space-x-4 md:ml-auto md:flex md:space-x-5">
                 <a href="findjobs.html" class="md:my-auto hover:text-green-500">Find Jobs</a>
                 <a href="employers.html" class="md:my-auto hover:text-green-500">Employers</a>
                 <a href="pricing.html" class="md:my-auto hover:text-green-500">Pricing</a>
@@ -50,7 +50,7 @@
             <a href="blog.html" class="block py-3 hover:text-green-500">Blog</a>
             <a href="contact.html" class="block py-3 hover:text-green-500">Contact</a>
             <a href="contact.html" class="">
-                <button type="button" class="apply-button block my-3">Login</button>
+                <button type="button" class="block my-3 apply-button">Login</button>
             </a>
             <a href="#" class="">
                 <button type="button"
@@ -69,8 +69,8 @@
     <!-- Employers -->
 
     <section class="px-10 py-10 bg-jobTypesBg">
-        <h2 class="md:text-4xl text-2xl font-bold my-5 text-center">Find Your Dream Job</h2>
-        <div class="md:flex max-w-full max-md:space-y-4 px-20">
+        <h2 class="my-5 text-2xl font-bold text-center md:text-4xl">Find Your Dream Job</h2>
+        <div class="max-w-full px-20 md:flex max-md:space-y-4">
             <input
                 class="w-full pl-4 md:py-3 py-2 md:text-lg bg-green-50 border border-black md:rounded-l-[28px] rounded-[28px] md:border-r-0 max-md:block"
                 type="text" placeholder="Job Keyword" />
@@ -97,9 +97,9 @@
 
         <!-- employer section-3 Results -->
 
-        <div class="flex items-center  p-3 border rounded-lg  border-slate-300">
+        <div class="flex items-center p-3 border rounded-lg border-slate-300">
             <h4 class="text-slate-700">Showing 35 results</h4>
-            <label class="text-slate-600 ml-auto mr-2">Sort by :</label>
+            <label class="ml-auto mr-2 text-slate-600">Sort by :</label>
             <select name="" id="">
                 <option class="" value="Newest Posts">Newest Posts</option>
                 <option class="" value="Oldest Posts">Oldest Posts</option>
@@ -107,11 +107,11 @@
             </select>
         </div>
 
-        <section class="grid  md:grid-cols-2 gap-6">
+        <section class="grid gap-6 md:grid-cols-2">
 
             <!-- Results -->
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/2.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -121,7 +121,7 @@
                         <div class="ml-auto mx-3 max-[450px]:hidden">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                     </div>
                     <div class="text-lg text-slate-500">
@@ -131,11 +131,11 @@
                             aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-3">
+                    <div class="items-center md:flex max-sm:space-y-3">
                         <div class="ml-auto hidden max-[450px]:block mx-3">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                         <button type="button"
                             class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish">Open
@@ -147,7 +147,7 @@
             </article>
 
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/4.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -157,7 +157,7 @@
                         <div class="ml-auto mx-3 max-[450px]:hidden">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                     </div>
                     <div class="text-lg text-slate-500">
@@ -166,11 +166,11 @@
                             ex consectetur nihil eos delectus adipisci quisquam harum corrupti aspernatur earum.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-3">
+                    <div class="items-center md:flex max-sm:space-y-3">
                         <div class="ml-auto hidden max-[450px]:block mx-3">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                         <button type="button"
                             class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish">Open
@@ -182,7 +182,7 @@
             </article>
 
             <article class="grid mt-4">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/6.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -192,7 +192,7 @@
                         <div class="ml-auto mx-3 max-[450px]:hidden">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                     </div>
                     <div class="text-lg text-slate-500">
@@ -202,11 +202,11 @@
                             aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-3">
+                    <div class="items-center md:flex max-sm:space-y-3">
                         <div class="ml-auto hidden max-[450px]:block mx-3">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                         <button type="button"
                             class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish">Open
@@ -218,7 +218,7 @@
             </article>
 
             <article class="grid mt-4">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/4.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -228,7 +228,7 @@
                         <div class="ml-auto mx-3 max-[450px]:hidden">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                     </div>
                     <div class="text-lg text-slate-500">
@@ -238,11 +238,11 @@
                             aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-3">
+                    <div class="items-center md:flex max-sm:space-y-3">
                         <div class="ml-auto hidden max-[450px]:block mx-3">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                         <button type="button"
                             class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish">Open
@@ -254,7 +254,7 @@
             </article>
 
             <article class="grid mt-4">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/3.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -264,7 +264,7 @@
                         <div class="ml-auto mx-3 max-[450px]:hidden">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                     </div>
                     <div class="text-lg text-slate-500">
@@ -273,11 +273,11 @@
                             placeat fuga eius maiores itaque inventore magni vero optio.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-3">
+                    <div class="items-center md:flex max-sm:space-y-3">
                         <div class="ml-auto hidden max-[450px]:block mx-3">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                         <button type="button"
                             class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish">Open
@@ -289,7 +289,7 @@
             </article>
 
             <article class="grid mt-4">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/1.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -299,7 +299,7 @@
                         <div class="ml-auto mx-3 max-[450px]:hidden">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                     </div>
                     <div class="text-lg text-slate-500">
@@ -309,11 +309,11 @@
                             sed iure quos tenetur.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-3">
+                    <div class="items-center md:flex max-sm:space-y-3">
                         <div class="ml-auto hidden max-[450px]:block mx-3">
                             <button
                                 class="text-[13px] text-slate-600 mt-1 bg-slate-100 border-black rounded-[28px] px-8 py-2.5 float-left"><i
-                                    class="fa-solid fa-star mr-1 opacity-50"></i>Featured</button>
+                                    class="mr-1 opacity-50 fa-solid fa-star"></i>Featured</button>
                         </div>
                         <button type="button"
                             class="border rounded-[20px] px-8 py-2 font-semibold bg-btnBgYellowish">Open
@@ -330,9 +330,9 @@
 
     <!-- list-navigation -->
 
-    <ul class="flex space-x-4 w-full justify-center pt-7 pb-28">
+    <ul class="flex justify-center w-full space-x-4 pt-7 pb-28">
         <li class="px-3 py-1.5 cursor-pointer hover:filter hover:scale-125"><a href="#"><i
-                    class="fa-solid fa-chevron-left mx-2"></i>Prev</a></li>
+                    class="mx-2 fa-solid fa-chevron-left"></i>Prev</a></li>
         <li class="bg-green-300 px-3 py-1.5 rounded-[50%] cursor-pointer hover:filter hover:scale-125"><a href="#">1</a>
         </li>
         <li class="hover:bg-green-300 px-3 py-1.5 rounded-[50%] cursor-pointer hover:filter hover:scale-125"><a
@@ -345,29 +345,29 @@
                 href="#">4</a>
         </li>
         <li class="px-3 py-1.5 cursor-pointer hover:filter hover:scale-125"><a href="#">Next</a><i
-                class="fa-solid fa-chevron-right mx-2"></i></li>
+                class="mx-2 fa-solid fa-chevron-right"></i></li>
     </ul>
 
 
     <!-- Download the App -->
-    <section class="grid max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7 grid-cols-1 p-6">
+    <section class="grid grid-cols-1 p-6 max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7">
         <div class="md:mr-5 md:mt-20">
-            <h3 class="text-3xl font-semibold my-5">Download the App</h3>
+            <h3 class="my-5 text-3xl font-semibold">Download the App</h3>
             <p class="max-w-[440px] text-slate-500">
                 Search for your favourite remote jobs on the go. Download our app on
                 the iOS App Store or Android Play Store.
             </p>
 
-            <ul class="mt-4 flex max-md:flex-col max-md:max-w-48 space-x-3 mx-auto max-md:space-y-3">
+            <ul class="flex mx-auto mt-4 space-x-3 max-md:flex-col max-md:max-w-48 max-md:space-y-3">
                 <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-                    <i class="fa-brands fa-apple text-4xl my-auto"></i>
+                    <i class="my-auto text-4xl fa-brands fa-apple"></i>
                     <div class="ml-3">
                         <p class="text-xs font-medium">Download on the</p>
                         <h4 class="text-xl font-medium">App Store</h4>
                     </div>
                 </li>
                 <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-                    <i class="fa-brands fa-google-play text-3xl my-auto"></i>
+                    <i class="my-auto text-3xl fa-brands fa-google-play"></i>
                     <div class="ml-3">
                         <p class="text-xs font-medium">Get it on</p>
                         <h4 class="text-xl font-medium">Google Play</h4>
@@ -381,8 +381,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 p-6">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+    <footer class="p-6 bg-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
             <div>
                 <img src="img/logo-dark.svg" class="mt-10" alt="" srcset="" />
                 <ul class="mt-12 space-y-2">
@@ -410,8 +410,8 @@
             </div>
 
             <div>
-                <h4 class="my-10 text-white font-semibold text-xl">For Candidates</h4>
-                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                <h4 class="my-10 text-xl font-semibold text-white">For Candidates</h4>
+                <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
                     <li><a href="#" class="footer-links">Browse all Jobs</a></li>
                     <li><a href="#" class="footer-links">Candidate Dashboard</a></li>
                     <li><a href="#" class="footer-links">Latest News</a></li>
@@ -421,8 +421,8 @@
             </div>
 
             <div>
-                <h4 class="my-10 text-white font-semibold text-xl">For Employers</h4>
-                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                <h4 class="my-10 text-xl font-semibold text-white">For Employers</h4>
+                <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
                     <li><a href="#" class="footer-links">Browse Candidates</a></li>
                     <li><a href="#" class="footer-links">Employer Dashboard</a></li>
                     <li><a href="#" class="footer-links">Submit a Job</a></li>
@@ -431,7 +431,7 @@
             </div>
 
             <div>
-                <h4 class="mt-10 mb-7 text-white font-semibold text-xl">
+                <h4 class="mt-10 text-xl font-semibold text-white mb-7">
                     Newsletter
                 </h4>
                 <p class="text-slate-400 max-w-[410px] my-5">
@@ -448,12 +448,12 @@
                 </div>
             </div>
         </div>
-        <hr class="my-14 opacity-50" />
+        <hr class="opacity-50 my-14" />
         <div class="md:flex my-7">
-            <p class="text-center text-sm text-slate-400">
+            <p class="text-sm text-center text-slate-400">
                 2024 Jobhire. All Right Reserved. Made by Web3Templates
             </p>
-            <p class="md:ml-auto max-md:mt-4 text-center text-sm text-slate-400">
+            <p class="text-sm text-center md:ml-auto max-md:mt-4 text-slate-400">
                 Privacy · Terms
             </p>
         </div>

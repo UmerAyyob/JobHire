@@ -25,7 +25,7 @@
                 </button>
             </div>
             <!-- Navbar Links -->
-            <div class="hidden md:ml-auto md:flex md:space-x-5 space-x-4">
+            <div class="hidden space-x-4 md:ml-auto md:flex md:space-x-5">
                 <a href="findjobs.html" class="md:my-auto hover:text-green-500">Find Jobs</a>
                 <a href="employers.html" class="md:my-auto hover:text-green-500">Employers</a>
                 <a href="pricing.html" class="md:my-auto hover:text-green-500">Pricing</a>
@@ -49,7 +49,7 @@
             <a href="pricing.html" class="block py-3 hover:text-green-500">Pricing</a>
             <a href="blog.html" class="block py-3 hover:text-green-500">Blog</a>
             <a href="contact.html" class="">
-                <button type="button" class="apply-button block my-3">Login</button>
+                <button type="button" class="block my-3 apply-button">Login</button>
             </a>
             <a href="contact.html" class="block py-3 hover:text-green-500">Contact</a>
             <a href="#" class="">
@@ -64,8 +64,8 @@
     <!-- findjobs section-1 -->
 
     <section class="px-10 py-10 bg-jobTypesBg">
-        <h2 class="md:text-4xl text-2xl font-bold my-5 text-center">Find Your Dream Job</h2>
-        <div class="md:flex max-w-full max-md:space-y-4 px-20">
+        <h2 class="my-5 text-2xl font-bold text-center md:text-4xl">Find Your Dream Job</h2>
+        <div class="max-w-full px-20 md:flex max-md:space-y-4">
             <input
                 class="w-full pl-4 md:py-3 py-2 md:text-lg bg-green-50 border border-black md:rounded-l-[28px] rounded-[28px] md:border-r-0 max-md:block"
                 type="text" placeholder="Job Keyword" />
@@ -92,14 +92,14 @@
     <div class="grid md:grid-cols-[1fr,2fr]">
 
         <section class="p-6">
-            <div class="flex items-center  p-3 border rounded-lg  border-slate-300">
+            <div class="flex items-center p-3 border rounded-lg border-slate-300">
                 <i class="fa-solid fa-filter text-slate-700"></i>
-                <h4 class="text-slate-600 ml-2">Filters</h4>
-                <i class="fa-solid fa-angle-down ml-auto text-slate-700 cursor-pointer" id="job-filter"></i>
+                <h4 class="ml-2 text-slate-600">Filters</h4>
+                <i class="ml-auto cursor-pointer fa-solid fa-angle-down text-slate-700" id="job-filter"></i>
             </div>
             <div id="job-specifications">
                 <div>
-                    <h3 class="recent-jobs-h3 my-5">Employment Type</h3>
+                    <h3 class="my-5 recent-jobs-h3">Employment Type</h3>
                     <ul class="space-y-2 text-slate-400">
                         <li><input type="checkbox" class="mr-2" name="full time" id="">Full Time (362)</li>
                         <li><input type="checkbox" class="mr-2" name="part time" id="">Part Time (154)</li>
@@ -109,11 +109,11 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="recent-jobs-h3 my-4">Salary</h3>
+                    <h3 class="my-4 recent-jobs-h3">Salary</h3>
                     <input type="range" class="" name="" id="">
                 </div>
                 <div>
-                    <h3 class="recent-jobs-h3 my-5">Experience Level</h3>
+                    <h3 class="my-5 recent-jobs-h3">Experience Level</h3>
                     <ul class="space-y-2 text-slate-400">
                         <li><input type="checkbox" class="mr-2" name="full time" id="">Trainee (362)</li>
                         <li><input type="checkbox" class="mr-2" name="part time" id="">Junior (154)</li>
@@ -131,9 +131,9 @@
         <section class="p-6">
             <!-- Result-Sorting -->
 
-            <div class="flex items-center  p-3 border rounded-lg  border-slate-300">
+            <div class="flex items-center p-3 border rounded-lg border-slate-300">
                 <h4 class="text-slate-700">Showing 35 results</h4>
-                <label class="text-slate-600 ml-auto mr-2">Sort by :</label>
+                <label class="ml-auto mr-2 text-slate-600">Sort by :</label>
                 <select name="" id="">
                     <option class="" value="Newest Posts">Newest Posts</option>
                     <option class="" value="Oldest Posts">Oldest Posts</option>
@@ -143,7 +143,7 @@
 
             <!-- Results -->
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/4.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -162,7 +162,7 @@
                             aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-8">
+                    <div class="items-center md:flex max-sm:space-y-8">
                         <div>
                             <button type="button"
                                 class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Full-time</button>
@@ -184,7 +184,7 @@
             </article>
 
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/3.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -203,7 +203,7 @@
                             voluptas ad saepe modi accusamus saepe qui nulla sequi cupiditate quia architecto.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-8">
+                    <div class="items-center md:flex max-sm:space-y-8">
                         <div>
                             <button type="button"
                                 class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Contract</button>
@@ -225,7 +225,7 @@
             </article>
 
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/6.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -245,7 +245,7 @@
                             officiis.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-8">
+                    <div class="items-center md:flex max-sm:space-y-8">
                         <div>
                             <button type="button"
                                 class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Full-time</button>
@@ -266,7 +266,7 @@
             </article>
 
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/2.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -285,7 +285,7 @@
                             aliquam quisquam quod corporis ab alias ut aspernatur neque earum necessitatibus incidunt.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-8">
+                    <div class="items-center md:flex max-sm:space-y-8">
                         <div>
                             <button type="button"
                                 class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Contract</button>
@@ -307,7 +307,7 @@
             </article>
 
             <article class="grid mt-10">
-                <div class="p-6 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl space-y-4">
+                <div class="p-6 space-y-4 border rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl">
                     <div class="flex items-center">
                         <img src="img/4.webp" class="h-10 mr-7" alt="" srcset="">
                         <div>
@@ -328,7 +328,7 @@
                             repudiandae saepe.
                         </p>
                     </div>
-                    <div class="md:flex items-center max-sm:space-y-8">
+                    <div class="items-center md:flex max-sm:space-y-8">
                         <div>
                             <button type="button"
                                 class="text-[13px] text-green-600 mt-1 bg-green-100 border-black rounded-[28px] px-2 py-1 float-left">Contract</button>
@@ -356,24 +356,24 @@
 
 
     <!-- Download the App -->
-    <section class="grid max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7 grid-cols-1 p-6">
+    <section class="grid grid-cols-1 p-6 max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7">
         <div class="md:mr-5 md:mt-20">
-            <h3 class="text-3xl font-semibold my-5">Download the App</h3>
+            <h3 class="my-5 text-3xl font-semibold">Download the App</h3>
             <p class="max-w-[440px] text-slate-500">
                 Search for your favourite remote jobs on the go. Download our app on
                 the iOS App Store or Android Play Store.
             </p>
 
-            <ul class="mt-4 flex max-md:flex-col max-md:max-w-48 space-x-3 mx-auto max-md:space-y-3">
+            <ul class="flex mx-auto mt-4 space-x-3 max-md:flex-col max-md:max-w-48 max-md:space-y-3">
                 <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-                    <i class="fa-brands fa-apple text-4xl my-auto"></i>
+                    <i class="my-auto text-4xl fa-brands fa-apple"></i>
                     <div class="ml-3">
                         <p class="text-xs font-medium">Download on the</p>
                         <h4 class="text-xl font-medium">App Store</h4>
                     </div>
                 </li>
                 <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-                    <i class="fa-brands fa-google-play text-3xl my-auto"></i>
+                    <i class="my-auto text-3xl fa-brands fa-google-play"></i>
                     <div class="ml-3">
                         <p class="text-xs font-medium">Get it on</p>
                         <h4 class="text-xl font-medium">Google Play</h4>
@@ -387,8 +387,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 p-6">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+    <footer class="p-6 bg-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
             <div>
                 <img src="img/logo-dark.svg" class="mt-10" alt="" srcset="" />
                 <ul class="mt-12 space-y-2">
@@ -416,8 +416,8 @@
             </div>
 
             <div>
-                <h4 class="my-10 text-white font-semibold text-xl">For Candidates</h4>
-                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                <h4 class="my-10 text-xl font-semibold text-white">For Candidates</h4>
+                <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
                     <li><a href="#" class="footer-links">Browse all Jobs</a></li>
                     <li><a href="#" class="footer-links">Candidate Dashboard</a></li>
                     <li><a href="#" class="footer-links">Latest News</a></li>
@@ -427,8 +427,8 @@
             </div>
 
             <div>
-                <h4 class="my-10 text-white font-semibold text-xl">For Employers</h4>
-                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                <h4 class="my-10 text-xl font-semibold text-white">For Employers</h4>
+                <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
                     <li><a href="#" class="footer-links">Browse Candidates</a></li>
                     <li><a href="#" class="footer-links">Employer Dashboard</a></li>
                     <li><a href="#" class="footer-links">Submit a Job</a></li>
@@ -437,7 +437,7 @@
             </div>
 
             <div>
-                <h4 class="mt-10 mb-7 text-white font-semibold text-xl">
+                <h4 class="mt-10 text-xl font-semibold text-white mb-7">
                     Newsletter
                 </h4>
                 <p class="text-slate-400 max-w-[410px] my-5">
@@ -454,12 +454,12 @@
                 </div>
             </div>
         </div>
-        <hr class="my-14 opacity-50" />
+        <hr class="opacity-50 my-14" />
         <div class="md:flex my-7">
-            <p class="text-center text-sm text-slate-400">
+            <p class="text-sm text-center text-slate-400">
                 2024 Jobhire. All Right Reserved. Made by Web3Templates
             </p>
-            <p class="md:ml-auto max-md:mt-4 text-center text-sm text-slate-400">
+            <p class="text-sm text-center md:ml-auto max-md:mt-4 text-slate-400">
                 Privacy · Terms
             </p>
         </div>

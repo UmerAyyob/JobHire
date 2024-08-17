@@ -22,19 +22,19 @@
 
 /* Recent Available Jobs  */
 .recent-jobs-container {
-  @apply lg:flex lg:items-center lg:justify-evenly bg-white py-5 rounded-2xl border border-slate-500 hover:border-black hover:shadow-2xl;
+  @apply py-5 bg-white border lg:flex lg:items-center lg:justify-evenly rounded-2xl border-slate-500 hover:border-black hover:shadow-2xl;
 }
 .recent-jobs-img {
-  @apply h-8 mx-auto lg:mx-3 w-8;
+  @apply w-8 h-8 mx-auto lg:mx-3;
 }
 .recent-jobs-h3 {
-  @apply font-medium text-lg pt-2 lg:pt-0  after:text-green-500 after:block after:text-left;
+  @apply pt-2 text-lg font-medium lg:pt-0 after:text-green-500 after:block after:text-left;
 }
 .recent-jobs-h4 {
-  @apply text-green-500 font-semibold lg:hidden;
+  @apply font-semibold text-green-500 lg:hidden;
 }
 .recent-jobs-ul {
-  @apply flex justify-center text-slate-400 font-medium;
+  @apply flex justify-center font-medium text-slate-400;
 }
 .recent-jobs-p {
   @apply text-slate-400 font-semibold text-[17px];
@@ -44,5 +44,5 @@
 }
 /* footer */
 .footer-links {
-  @apply hover:text-green-700 transition ease-in-out delay-100 duration-300 transform;
+  @apply transition duration-300 ease-in-out delay-100 transform hover:text-green-700;
 }

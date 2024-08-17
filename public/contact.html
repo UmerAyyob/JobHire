@@ -25,7 +25,7 @@
                 </button>
             </div>
             <!-- Navbar Links -->
-            <div class="hidden md:ml-auto md:flex md:space-x-5 space-x-4">
+            <div class="hidden space-x-4 md:ml-auto md:flex md:space-x-5">
                 <a href="findjobs.html" class="md:my-auto hover:text-green-500">Find Jobs</a>
                 <a href="employers.html" class="md:my-auto hover:text-green-500">Employers</a>
                 <a href="pricing.html" class="md:my-auto hover:text-green-500">Pricing</a>
@@ -50,7 +50,7 @@
             <a href="blog.html" class="block py-3 hover:text-green-500">Blog</a>
             <a href="contact.html" class="block py-3 hover:text-green-500">Contact</a>
             <a href="contact.html" class="">
-                <button type="button" class="apply-button block my-3">Login</button>
+                <button type="button" class="block my-3 apply-button">Login</button>
             </a>
             <a href="#" class="">
                 <button type="button"
@@ -63,13 +63,13 @@
 
     <!-- Blog-3 -->
 
-    <div class="bg-jobTypesBg space-y-3 text-center py-14">
+    <div class="space-y-3 text-center bg-jobTypesBg py-14">
         <h2 class="font-bold mx-auto text-2xl md:text-4xl max-w-[900px]">Contact</h2>
-        <h4 class="text-slate-500 mx-auto font-semibold">Send us a message or get in touch.</h4>
+        <h4 class="mx-auto font-semibold text-slate-500">Send us a message or get in touch.</h4>
     </div>
-    <!-- <main class="p-6 flex justify-center">
-        <div class="space-y-6 mt-8">
-            <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-6 place-content-center">
+    <!-- <main class="flex justify-center p-6">
+        <div class="mt-8 space-y-6">
+            <form action="" class="grid grid-cols-1 gap-6 md:grid-cols-2 place-content-center">
                 <div class="text-xl">
                     <label class="block" for="firstName">First Name</label>
                     <input class="border my-3 rounded-lg border-blue-300 py-3 px-3 opacity-50 md:w-[380px]" type="text"
@@ -88,7 +88,7 @@
                 </div>
                 <div class="text-xl">
                     <label class="block" for="message">Message</label>
-                    <textarea class="border my-3 w-full rounded-lg border-blue-300 py-3 px-3" name="message"
+                    <textarea class="w-full px-3 py-3 my-3 border border-blue-300 rounded-lg" name="message"
                         id="message" rows="5" placeholder="Your message"></textarea>
                 </div>
             </form>
@@ -98,60 +98,60 @@
         </div>
     </main> -->
 
-    <main class="p-6 flex justify-center w-full">
-        <div class="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
-            <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <main class="flex justify-center w-full p-6">
+        <div class="w-full max-w-3xl p-8 bg-white rounded-lg shadow-lg">
+            <form action="" class="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <!-- First Name -->
                 <div class="text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="firstName">First Name</label>
+                    <label class="block mb-2 font-medium text-gray-700" for="firstName">First Name</label>
                     <input
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         type="text" name="firstName" id="firstName" placeholder="First Name" required>
                 </div>
                 <!-- Last Name -->
                 <div class="text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="lastName">Last Name</label>
+                    <label class="block mb-2 font-medium text-gray-700" for="lastName">Last Name</label>
                     <input
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         type="text" name="lastName" id="lastName" placeholder="Last Name" required>
                 </div>
                 <!-- Email -->
                 <div class="text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="email">Email Address</label>
+                    <label class="block mb-2 font-medium text-gray-700" for="email">Email Address</label>
                     <input
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         type="email" name="email" id="email" placeholder="Email Address" required>
                 </div>
                 <!-- Contact Number -->
                 <div class="text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="tel">Contact Number</label>
+                    <label class="block mb-2 font-medium text-gray-700" for="tel">Contact Number</label>
                     <input
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         type="tel" name="tel" id="tel" placeholder="Contact Number" required>
                 </div>
                 <!-- Position Applying For -->
                 <div class="text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="position">Position Applying For</label>
+                    <label class="block mb-2 font-medium text-gray-700" for="position">Position Applying For</label>
                     <input
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         type="text" name="position" id="position" placeholder="Position Applying For" required>
                 </div>
                 <!-- Resume Upload -->
                 <div class="text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="resume">Upload Resume</label>
+                    <label class="block mb-2 font-medium text-gray-700" for="resume">Upload Resume</label>
                     <input
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
                 </div>
                 <!-- Message -->
-                <div class="md:col-span-2 text-xl">
-                    <label class="block font-medium text-gray-700 mb-2" for="message">Message</label>
+                <div class="text-xl md:col-span-2">
+                    <label class="block mb-2 font-medium text-gray-700" for="message">Message</label>
                     <textarea
-                        class="border rounded-lg border-blue-300 py-3 px-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full px-3 py-3 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         name="message" id="message" rows="5" placeholder="Your message" required></textarea>
                 </div>
                 <!-- Submit Button -->
-                <div class="md:col-span-2 text-center">
+                <div class="text-center md:col-span-2">
                     <button type="button"
                         class="border-transparent hover:border-black rounded-[20px] px-4 py-2 font-semibold mt-2 lg:mt-0 bg-btnBgYellowish hover:border md:my-auto my-3">Send
                         Message</button>
@@ -172,24 +172,24 @@
 
 
     <!-- Download the App -->
-    <section class="grid max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7 grid-cols-1 p-6">
+    <section class="grid grid-cols-1 p-6 max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7">
         <div class="md:mr-5 md:mt-20">
-            <h3 class="text-3xl font-semibold my-5">Download the App</h3>
+            <h3 class="my-5 text-3xl font-semibold">Download the App</h3>
             <p class="max-w-[440px] text-slate-500">
                 Search for your favourite remote jobs on the go. Download our app on
                 the iOS App Store or Android Play Store.
             </p>
 
-            <ul class="mt-4 flex max-md:flex-col max-md:max-w-48 space-x-3 mx-auto max-md:space-y-3">
+            <ul class="flex mx-auto mt-4 space-x-3 max-md:flex-col max-md:max-w-48 max-md:space-y-3">
                 <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-                    <i class="fa-brands fa-apple text-4xl my-auto"></i>
+                    <i class="my-auto text-4xl fa-brands fa-apple"></i>
                     <div class="ml-3">
                         <p class="text-xs font-medium">Download on the</p>
                         <h4 class="text-xl font-medium">App Store</h4>
                     </div>
                 </li>
                 <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-                    <i class="fa-brands fa-google-play text-3xl my-auto"></i>
+                    <i class="my-auto text-3xl fa-brands fa-google-play"></i>
                     <div class="ml-3">
                         <p class="text-xs font-medium">Get it on</p>
                         <h4 class="text-xl font-medium">Google Play</h4>
@@ -203,8 +203,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 p-6">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+    <footer class="p-6 bg-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
             <div>
                 <img src="img/logo-dark.svg" class="mt-10" alt="" srcset="" />
                 <ul class="mt-12 space-y-2">
@@ -232,8 +232,8 @@
             </div>
 
             <div>
-                <h4 class="my-10 text-white font-semibold text-xl">For Candidates</h4>
-                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                <h4 class="my-10 text-xl font-semibold text-white">For Candidates</h4>
+                <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
                     <li><a href="#" class="footer-links">Browse all Jobs</a></li>
                     <li><a href="#" class="footer-links">Candidate Dashboard</a></li>
                     <li><a href="#" class="footer-links">Latest News</a></li>
@@ -243,8 +243,8 @@
             </div>
 
             <div>
-                <h4 class="my-10 text-white font-semibold text-xl">For Employers</h4>
-                <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+                <h4 class="my-10 text-xl font-semibold text-white">For Employers</h4>
+                <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
                     <li><a href="#" class="footer-links">Browse Candidates</a></li>
                     <li><a href="#" class="footer-links">Employer Dashboard</a></li>
                     <li><a href="#" class="footer-links">Submit a Job</a></li>
@@ -253,7 +253,7 @@
             </div>
 
             <div>
-                <h4 class="mt-10 mb-7 text-white font-semibold text-xl">
+                <h4 class="mt-10 text-xl font-semibold text-white mb-7">
                     Newsletter
                 </h4>
                 <p class="text-slate-400 max-w-[410px] my-5">
@@ -270,12 +270,12 @@
                 </div>
             </div>
         </div>
-        <hr class="my-14 opacity-50" />
+        <hr class="opacity-50 my-14" />
         <div class="md:flex my-7">
-            <p class="text-center text-sm text-slate-400">
+            <p class="text-sm text-center text-slate-400">
                 2024 Jobhire. All Right Reserved. Made by Web3Templates
             </p>
-            <p class="md:ml-auto max-md:mt-4 text-center text-sm text-slate-400">
+            <p class="text-sm text-center md:ml-auto max-md:mt-4 text-slate-400">
                 Privacy · Terms
             </p>
         </div>

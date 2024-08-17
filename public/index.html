@@ -25,7 +25,7 @@
         </button>
       </div>
       <!-- Navbar Links -->
-      <div class="hidden md:ml-auto md:flex md:space-x-5 space-x-4">
+      <div class="hidden space-x-4 md:ml-auto md:flex md:space-x-5">
         <a href="findjobs.html" class="md:my-auto hover:text-green-500">Find Jobs</a>
         <a href="employers.html" class="md:my-auto hover:text-green-500">Employers</a>
         <a href="pricing.html" class="md:my-auto hover:text-green-500">Pricing</a>
@@ -49,7 +49,7 @@
       <a href="blog.html" class="block py-3 hover:text-green-500">Blog</a>
       <a href="contact.html" class="block py-3 hover:text-green-500">Contact</a>
       <a href="contact.html" class="">
-        <button type="button" class="apply-button block my-3">Login</button>
+        <button type="button" class="block my-3 apply-button">Login</button>
       </a>
       <a href="#" class="">
         <button type="button"
@@ -64,11 +64,11 @@
   <!-- Banner -->
   <main class="md:grid md:grid-cols-2">
     <div class="banner font-medium px-5 mt-[100px] max-md:mt-0">
-      <h1 class="w-full md:text-4xl text-2xl font-semibold text-center mb-14 mt-3">
+      <h1 class="w-full mt-3 text-2xl font-semibold text-center md:text-4xl mb-14">
         When Searching for a job don’t go in blind, Research first.
       </h1>
 
-      <div class="md:flex max-w-full max-md:space-y-4">
+      <div class="max-w-full md:flex max-md:space-y-4">
         <input
           class="w-full pl-3 py-5 md:text-lg bg-green-50 border border-black md:rounded-l-[28px] rounded-[28px] md:border-r-0 max-md:block"
           type="text" placeholder="Job Keyword" />
@@ -82,7 +82,7 @@
         </button>
       </div>
 
-      <label for="Popular Searchs" class="block text-btntextGreenish my-3">Popular Searchs:</label>
+      <label for="Popular Searchs" class="block my-3 text-btntextGreenish">Popular Searchs:</label>
       <button type="button" class="banner-button">Designer</button>
       <button type="button" class="banner-button">Developer</button>
       <button type="button" class="banner-button">iOS</button>
@@ -94,29 +94,29 @@
   </main>
 
   <!-- Types of Jobs -->
-  <section class="text-center bg-jobTypesBg p-8">
-    <h2 class="text-2xl font-bold max-w-96  mx-auto">Thousands of dreams jobs available now</h2>
+  <section class="p-8 text-center bg-jobTypesBg">
+    <h2 class="mx-auto text-2xl font-bold max-w-96">Thousands of dreams jobs available now</h2>
     <p class="text-xl text-slate-400">Browse some featured jobs</p>
-    <article class="grid md:grid-cols-2 lg:grid-cols-4 gap-9 mt-10">
+    <article class="grid mt-10 md:grid-cols-2 lg:grid-cols-4 gap-9">
 
       <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
         <img src="img/desginer.png" class="h-16 mx-auto" alt="" srcset="">
-        <h3 class="text-slate-600 font-medium text-lg pt-2">Designs & Art</h3>
+        <h3 class="pt-2 text-lg font-medium text-slate-600">Designs & Art</h3>
         <p class="text-slate-400">653 open positions</p>
       </div>
       <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
         <img src="img/education.png" class="h-16 mx-auto" alt="" srcset="">
-        <h3 class="text-slate-600 font-medium text-lg pt-2">Education</h3>
+        <h3 class="pt-2 text-lg font-medium text-slate-600">Education</h3>
         <p class="text-slate-400">109 open positions</p>
       </div>
       <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
         <img src="img/app-development.png" class="h-16 mx-auto" alt="" srcset="">
-        <h3 class="text-slate-600 font-medium text-lg pt-2">Web development</h3>
+        <h3 class="pt-2 text-lg font-medium text-slate-600">Web development</h3>
         <p class="text-slate-400">870 open positions</p>
       </div>
       <div class="bg-white py-[50px] rounded-2xl hover:border border-blue-600">
         <img src="img/content.png" class="h-16 mx-auto" alt="" srcset="">
-        <h3 class="text-slate-600 font-medium text-lg pt-2">Digital Marketing</h3>
+        <h3 class="pt-2 text-lg font-medium text-slate-600">Digital Marketing</h3>
         <p class="text-slate-400">360 open positions</p>
       </div>
     </article>
@@ -131,7 +131,7 @@
     <button type="button" class="my-3 font-normal ms-3">Remote</button>
     <button type="button" class="my-3 font-bold ms-3">Popular</button>
 
-    <article class="grid md:grid-cols-2 lg:grid-cols-1  gap-9 mt-10 text-center">
+    <article class="grid mt-10 text-center md:grid-cols-2 lg:grid-cols-1 gap-9">
 
       <div class="recent-jobs-container">
         <img src="img/1.webp" class="recent-jobs-img" alt="" srcset="">
@@ -139,7 +139,7 @@
         <h4 class="recent-jobs-h4">The Simpsons</h4>
         <ul class="recent-jobs-ul">
           <li class="m-2 lg:mr-16">Contract</li>
-          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>San Francisco</li>
+          <li class="m-2 "><i class="mr-2 fa-solid fa-location-dot"></i>San Francisco</li>
         </ul>
         <p class="recent-jobs-p">$1500-$3600</p>
         <button type="button" class="apply-button">Apply</button>
@@ -151,7 +151,7 @@
         <ul class="recent-jobs-ul">
           <li class="m-2 lg:mr-16">Remote
           </li>
-          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Herzegovina</li>
+          <li class="m-2 "><i class="mr-2 fa-solid fa-location-dot"></i>Herzegovina</li>
         </ul>
         <p class="recent-jobs-p">$800-$2000</p>
         <button type="button" class="apply-button">Apply</button>
@@ -163,7 +163,7 @@
         <ul class="recent-jobs-ul">
           <li class="m-2 lg:mr-16">Contract
           </li>
-          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Luxembourg</li>
+          <li class="m-2 "><i class="mr-2 fa-solid fa-location-dot"></i>Luxembourg</li>
         </ul>
         <p class="recent-jobs-p">$1250-$3000</p>
         <button type="button" class="apply-button">Apply</button>
@@ -176,7 +176,7 @@
           <li class="m-2 lg:mr-16">Remote
 
           </li>
-          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>New York, NY
+          <li class="m-2 "><i class="mr-2 fa-solid fa-location-dot"></i>New York, NY
           </li>
         </ul>
         <p class="recent-jobs-p">$3500-$4600</p>
@@ -190,7 +190,7 @@
           <li class="m-2 lg:mr-16">Remote
 
           </li>
-          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Bay Area
+          <li class="m-2 "><i class="mr-2 fa-solid fa-location-dot"></i>Bay Area
           </li>
         </ul>
         <p class="recent-jobs-p">$3500-$4500</p>
@@ -204,30 +204,30 @@
           <li class="m-2 lg:mr-16">Remote
 
           </li>
-          <li class="m-2 "><i class="fa-solid fa-location-dot mr-2"></i>Silicon Valley
+          <li class="m-2 "><i class="mr-2 fa-solid fa-location-dot"></i>Silicon Valley
           </li>
         </ul>
         <p class="recent-jobs-p">$2000-$3600</p>
         <button type="button" class="apply-button">Apply</button>
       </div>
-      <button type="button" class="button-styling mx-auto">Browse more Jobs</button>
+      <button type="button" class="mx-auto button-styling">Browse more Jobs</button>
     </article>
 
 
   </section>
 
   <!-- Grow your Career -->
-  <section class="grid md:grid-cols-2 gap-7 grid-cols-1 p-6">
+  <section class="grid grid-cols-1 p-6 md:grid-cols-2 gap-7">
     <div class="mx-auto">
       <img src="img/artgirl..svg" alt="">
     </div>
     <div class="lg:mr-5">
-      <h3 class="text-3xl font-semibold my-5">Grow your career</h3>
+      <h3 class="my-5 text-3xl font-semibold">Grow your career</h3>
       <p class="max-w-96 text-slate-500">When an unknown printer took a galley of type and scrambled it to make a type
         specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
         essentially unchanged</p>
-      <div class="grid md:grid-cols-2 gap-6 mt-10 md:text-center">
-        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">100% Verified Jobs
+      <div class="grid gap-6 mt-10 md:grid-cols-2 md:text-center">
+        <h4 class="relative p-5 font-bold rounded-lg bg-jobTypesBg">100% Verified Jobs
           <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
             xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -243,7 +243,7 @@
           </svg>
 
         </h4>
-        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">One profile Unlimited job Opening
+        <h4 class="relative p-5 font-bold rounded-lg bg-jobTypesBg">One profile Unlimited job Opening
           <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
             xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -259,7 +259,7 @@
           </svg>
 
         </h4>
-        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">Get Personalized Job Recommendations
+        <h4 class="relative p-5 font-bold rounded-lg bg-jobTypesBg">Get Personalized Job Recommendations
           <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
             xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -275,7 +275,7 @@
           </svg>
 
         </h4>
-        <h4 class="relative bg-jobTypesBg p-5 rounded-lg font-bold">Find Your Perfect Job Match
+        <h4 class="relative p-5 font-bold rounded-lg bg-jobTypesBg">Find Your Perfect Job Match
           <svg viewBox="0 0 1024 1024" class="icon absolute h-8 right-[-15px] top-[-15px] " version="1.1"
             xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -295,17 +295,17 @@
     </div>
   </section>
 
-  <section class="p-6 text-black font-semibold text-center lg:mt-20">
-    <ul class="md:flex justify-evenly align-middle border border-black rounded-2xl">
-      <li><img src="img/user.svg" class="mx-auto h-20 w-20 my-5" alt="">
+  <section class="p-6 font-semibold text-center text-black lg:mt-20">
+    <ul class="align-middle border border-black md:flex justify-evenly rounded-2xl">
+      <li><img src="img/user.svg" class="w-20 h-20 mx-auto my-5" alt="">
         <h4 class="text-3xl">35000+</h4>
         <p class="mb-4 text-lg">daily active users</p>
       </li>
-      <li><img src="img/thumb.svg" class="mx-auto h-20 w-20 my-5" alt="">
+      <li><img src="img/thumb.svg" class="w-20 h-20 mx-auto my-5" alt="">
         <h4 class="text-3xl">69000+</h4>
         <p class="mb-4 text-lg">open job positions</p>
       </li>
-      <li><img src="img/reading.svg" class="mx-auto h-20 w-20 my-5" alt="">
+      <li><img src="img/reading.svg" class="w-20 h-20 mx-auto my-5" alt="">
         <h4 class="text-3xl">68500+</h4>
         <p class="mb-4 text-lg">stories shared</p>
       </li>
@@ -314,9 +314,9 @@
 
   <!-- Client Reviews -->
 
-  <section class="grid md:grid-cols-2 gap-7 grid-cols-1 p-6">
+  <section class="grid grid-cols-1 p-6 md:grid-cols-2 gap-7">
     <div class="lg:mr-5 lg:mt-20">
-      <h3 class="text-3xl font-semibold my-5">Client Reviews</h3>
+      <h3 class="my-5 text-3xl font-semibold">Client Reviews</h3>
       <p class="max-w-[440px] text-slate-500">
         I was impressed by the quality of this job board website template. We
         were able to lauch a full stack web application with this front-end
@@ -339,46 +339,46 @@
 
   <!-- Latest News -->
   <section class="p-6 text-center">
-    <h3 class="text-3xl font-semibold my-5">Latest News</h3>
-    <div class="grid md:grid-cols-3 gap-x-5 text-left">
+    <h3 class="my-5 text-3xl font-semibold">Latest News</h3>
+    <div class="grid text-left md:grid-cols-3 gap-x-5">
       <div class="mt-10">
         <img src="img/news1.webp" class="w-full rounded-[20px]" alt="" srcset="">
-        <h4 class="font-semibold text-green-500 mt-3">23 SEPTEMBER, 2022</h4>
-        <p class="font-medium text-lg mt-3">Top American Companies that Promote Gender Diversity in the Workplace</p>
+        <h4 class="mt-3 font-semibold text-green-500">23 SEPTEMBER, 2022</h4>
+        <p class="mt-3 text-lg font-medium">Top American Companies that Promote Gender Diversity in the Workplace</p>
       </div>
       <div class="mt-10">
         <img src="img/news2.webp" class="w-full rounded-[20px]" alt="" srcset="">
-        <h4 class="font-semibold text-green-500 mt-3">17 AUGUST, 2022</h4>
-        <p class="font-medium text-lg mt-3">How to Identify Diversity & Inclusivity at Workplace?</p>
+        <h4 class="mt-3 font-semibold text-green-500">17 AUGUST, 2022</h4>
+        <p class="mt-3 text-lg font-medium">How to Identify Diversity & Inclusivity at Workplace?</p>
       </div>
       <div class="mt-10">
         <img src="img/news3.webp" class="w-full rounded-[20px]" alt="" srcset="">
-        <h4 class="font-semibold text-green-500 mt-3">19 JULY, 2022</h4>
-        <p class="font-medium text-lg mt-3">The Rise of Remote Jobs & How to Write a Resume to Get a Perfect Remote Job?
+        <h4 class="mt-3 font-semibold text-green-500">19 JULY, 2022</h4>
+        <p class="mt-3 text-lg font-medium">The Rise of Remote Jobs & How to Write a Resume to Get a Perfect Remote Job?
         </p>
       </div>
     </div>
-    <button type="button" class="button-styling mx-auto">View on Blog</button>
+    <button type="button" class="mx-auto button-styling">View on Blog</button>
   </section>
 
   <!-- Download the App -->
-  <section class="grid max-md:place-items-center  md:grid-cols-2 bg-jobTypesBg gap-7 grid-cols-1 p-6">
+  <section class="grid grid-cols-1 p-6 max-md:place-items-center md:grid-cols-2 bg-jobTypesBg gap-7">
     <div class="md:mr-5 md:mt-20">
-      <h3 class="text-3xl font-semibold my-5">Download the App</h3>
+      <h3 class="my-5 text-3xl font-semibold">Download the App</h3>
       <p class="max-w-[440px] text-slate-500">
         Search for your favourite remote jobs on the go. Download our app on the iOS App Store or Android Play Store.
       </p>
 
-      <ul class="mt-4 flex max-md:flex-col max-md:max-w-48 space-x-3 mx-auto max-md:space-y-3">
+      <ul class="flex mx-auto mt-4 space-x-3 max-md:flex-col max-md:max-w-48 max-md:space-y-3">
         <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-          <i class="fa-brands fa-apple text-4xl my-auto"></i>
+          <i class="my-auto text-4xl fa-brands fa-apple"></i>
           <div class="ml-3">
             <p class="text-xs font-medium">Download on the</p>
             <h4 class="text-xl font-medium">App Store</h4>
           </div>
         </li>
         <li class="bg-white rounded-[10px] flex py-1 px-3 hover:cursor-pointer">
-          <i class="fa-brands fa-google-play text-3xl my-auto"></i>
+          <i class="my-auto text-3xl fa-brands fa-google-play"></i>
           <div class="ml-3">
             <p class="text-xs font-medium">Get it on</p>
             <h4 class="text-xl font-medium">Google Play</h4>
@@ -393,8 +393,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class=" bg-slate-900 p-6">
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+  <footer class="p-6 bg-slate-900">
+    <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
 
       <div>
         <img src="img/logo-dark.svg" class="mt-10" alt="" srcset="" />
@@ -422,8 +422,8 @@
       </div>
 
       <div>
-        <h4 class="my-10 text-white font-semibold text-xl">For Candidates</h4>
-        <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+        <h4 class="my-10 text-xl font-semibold text-white">For Candidates</h4>
+        <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
           <li><a href="#" class="footer-links">Browse all Jobs</a></li>
           <li><a href="#" class="footer-links">Candidate Dashboard</a></li>
           <li><a href="#" class="footer-links">Latest News</a></li>
@@ -433,8 +433,8 @@
       </div>
 
       <div>
-        <h4 class="my-10 text-white font-semibold text-xl">For Employers</h4>
-        <ul class="text-slate-400 space-y-2 lg:text-base text-sm">
+        <h4 class="my-10 text-xl font-semibold text-white">For Employers</h4>
+        <ul class="space-y-2 text-sm text-slate-400 lg:text-base">
           <li><a href="#" class="footer-links">Browse Candidates</a></li>
           <li><a href="#" class="footer-links">Employer Dashboard</a></li>
           <li><a href="#" class="footer-links">Submit a Job</a></li>
@@ -443,7 +443,7 @@
       </div>
 
       <div>
-        <h4 class="mt-10 mb-7 text-white font-semibold text-xl">Newsletter</h4>
+        <h4 class="mt-10 text-xl font-semibold text-white mb-7">Newsletter</h4>
         <p class="text-slate-400 max-w-[410px] my-5">
           Subscribe to our newsletter and never miss latest job alert and news
         </p>
@@ -460,10 +460,10 @@
 
 
     </div>
-    <hr class="my-14 opacity-50">
+    <hr class="opacity-50 my-14">
     <div class="md:flex my-7">
-      <p class="text-center text-sm text-slate-400">2024 Jobhire. All Right Reserved. Made by Web3Templates</p>
-      <p class="md:ml-auto max-md:mt-4  text-center text-sm text-slate-400">Privacy · Terms</p>
+      <p class="text-sm text-center text-slate-400">2024 Jobhire. All Right Reserved. Made by Web3Templates</p>
+      <p class="text-sm text-center md:ml-auto max-md:mt-4 text-slate-400">Privacy · Terms</p>
     </div>
   </footer>
 
